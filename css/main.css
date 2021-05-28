@@ -1,0 +1,383 @@
+body, ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font: 16px 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Header styles start */
+/** Header main styles start **/
+header {
+    height: 100vh;
+    background: url("../img/discord-header-bg.png") top / cover;
+}
+
+.header-elements {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/** Header main styles end **/
+
+/** Header nav panel styles start **/
+.header-elements nav {
+    background-color: rgba(0, 0, 0, .1);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*** Header nav panel logo styles ***/
+.header-elements nav .header-logo-link {
+    display: flex;
+}
+
+/*** Header nav panel menu styles start ***/
+.header-elements nav ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.header-elements nav ul li {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header-elements nav ul li a {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.header-elements nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    background-color: #5567a0;
+}
+/*** Header nav panel menu styles end ***/
+
+/*** Header nav panel log in styles start ***/
+.header-log-in {
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.header-log-in a {
+    padding: 10px 30px;
+    background-color: #5567a0;
+    border-radius: 30px;
+}
+
+/*** Header nav panel log in styles end ***/
+/** Header nav panel styles end **/
+
+/** Header center block styles start **/
+.header-center-block {
+    text-shadow: #000 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.header-center-block h1 {
+    font: 80px 'Bebas Neue'; 
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.header-center-block h3 {
+    font: 36px 'Bebas Neue'; 
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+/** Header center block styles end **/
+
+/** Header bottom slider styles start **/
+.header-bottom-block {
+    margin-bottom: 2%;
+}
+
+.header-bottom-block .header-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-bottom-block .header-slider span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+.header-bottom-block .header-slider img {
+    width: 20px;
+}
+/** Header bottom slider styles end **/
+/* Header styles end */
+
+/* About project styles start */
+.about-project {
+    display: flex;
+    flex-direction: column;
+}
+
+.features-block {
+    color: #000;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "features-img features-desc";
+}
+
+.features-block img {
+    margin: auto 0;
+    grid-area: features-img;
+    width: 100%;
+}
+
+.features-desc {
+    grid-area: features-desc;
+}
+
+
+.features-block-center {
+    grid-template-areas: 
+    "features-desc features-img";
+    background-color: #f6f6f6;
+}
+
+.about-project .wave-top,
+.about-project .wave-bottom {
+    background-color: #f6f6f6;
+}
+
+.about-project .wave-top {
+    transform: rotate(180deg);
+}
+
+.features-desc {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features-desc h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: rgb(35, 39, 42);
+    padding-bottom: 5%;
+}
+
+.features-desc p {
+    font-size: 20px;
+    color: rgb(35, 39, 42);
+}
+/* About project styles end */
+
+/* About us styles start */
+.about-us {
+    background:url("../img/discord-about-us-bg.jpg") center / cover;
+}
+
+.about-us-elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "about-us-desc about-us-info";
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 100%;
+}
+
+.about-us-desc {
+    padding: 30px;
+    grid-area: about-us-desc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: #000 0px 0px 10px;
+}
+
+.about-us-desc h3 {
+    font: 24px 'Bebas Neue';
+    font-weight: bold;
+}
+
+.about-us-desc h2 {
+    font: 80px 'Bebas Neue';
+    font-weight: bold;
+}
+
+.about-us-desc p {
+    font-size: 20px;
+}
+
+.about-us-info {
+    grid-area: about-us-info;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+
+.dev-block {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #23272a;
+    border-radius: 10px;
+    min-width: 320px;
+    margin: 15px;
+}
+
+.dev-block-info {
+    display: flex;
+}
+
+.dev-block-info .avatar-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.dev-block-info .mgoreev {
+    background: url("../img/mgoreev.jpg") center / cover;
+}
+
+.dev-block-info .alatyshev {
+    background: url("../img/alatyshev.jpg") center / cover;
+}
+
+.dev-block-info .aalipov {
+    background: url("../img/aalipov.jpg") center / cover;
+}
+
+.dev-block-info .ogrigorieva {
+    background: url("../img/ogrigorieva.jpg") center / cover;
+}
+
+.dev-block-info .dborovikov {
+    background: url("../img/dborovikov.jpg") center / cover;
+}
+
+.dev-block-info-desc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.dev-block-name {
+    color: rgb(114, 137, 218);
+    font-weight: bold;
+}
+
+.dev-block-position {
+    color: #fff; 
+}
+
+.dev-block-link img {
+    width: auto;
+    height: 40px;
+}
+/* About us styles end */
+
+
+/* For small devices */
+@media (max-width: 1023px) {
+    /* header styles start */
+    /** header nav styles start */
+    .header-elements nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-elements nav .header-logo-link {
+        margin: 20px 0;
+    }
+
+    .header-elements nav ul li a {
+        padding: 0 15px;
+    }
+
+    .header-log-in a {
+        margin: 20px 0 15px 0;
+    }
+    /** header nav styles end */
+
+    .header-center-block h1 {
+        font: 60px 'Bebas Neue'; 
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+
+    .header-center-block h3 {
+        font: 24px 'Bebas Neue'; 
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    /* header styles end */
+
+    /* about project styles start */
+    .features-block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-desc h3 {
+        font-size: 32px;
+        font-weight: bold;
+        color: rgb(35, 39, 42);
+        padding-bottom: 5%;
+    }
+
+    .features-desc p {
+        font-size: 16px;
+        color: rgb(35, 39, 42);
+    }
+    /* about project styles end */
+
+    /* about us styles start */
+    .about-us-elements {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us-desc {
+        text-align: center;
+    }
+
+    .about-us-info {
+        align-items: center;
+    }
+
+
+    /* about us styles end */
+}
