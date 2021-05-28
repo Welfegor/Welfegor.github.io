@@ -10,15 +10,17 @@ a {
     color: #fff;
 }
 
+
+
+
+
 /* Header styles start */
 /** Header main styles start **/
 header {
-    height: auto;
     background-color: #5567a0;
 }
 
 .header-elements {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,7 +39,7 @@ header {
 }
 
 /*** Header nav panel logo styles ***/
-.header-elements nav .header-logo-link {
+.header-elements nav .header-logo {
     display: flex;
 }
 
@@ -70,7 +72,7 @@ header {
 /*** Header nav panel menu styles end ***/
 
 /*** Header nav panel log in styles start ***/
-.header-log-in {
+.header-login {
     height: 100%;
     font-size: 14px;
     color: #fff;
@@ -80,7 +82,7 @@ header {
     align-items: center;
 }
 
-.header-log-in a {
+.header-login a {
     padding: 10px 30px;
     background-color: #5567a0;
     border-radius: 30px;
@@ -95,7 +97,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 40px 10px;
 }
 
@@ -117,23 +118,27 @@ header {
     margin-bottom: 2%;
 }
 
-.header-bottom-block .header-slider {
+.header-slider {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header-bottom-block .header-slider span {
+.header-slider-desc {
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 10%;
 }
 
-.header-bottom-block .header-slider img {
+.header-slider img {
     width: 20px;
 }
 /** Header bottom slider styles end **/
 /* Header styles end */
+
+
+
+
 
 /* About project styles start */
 .about-project {
@@ -199,6 +204,10 @@ header {
 }
 /* About project styles end */
 
+
+
+
+
 /* About us styles start */
 .about-us {
     background:url("../img/discord-about-us-bg.jpg") center / cover;
@@ -215,6 +224,7 @@ header {
     height: 100%;
 }
 
+/** about us title styles start **/
 .about-us-desc {
     padding: 30px;
     grid-area: about-us-desc;
@@ -237,15 +247,15 @@ header {
 .about-us-desc p {
     font-size: 20px;
 }
+/** about us title styles end **/
 
+/** about us developers styles start **/
 .about-us-info {
     grid-area: about-us-info;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-
-
 
 .dev-block {
     padding: 15px;
@@ -267,6 +277,7 @@ header {
     height: 60px;
 }
 
+/*** about us developers avatars styles start ***/
 .dev-block-info .mgoreev {
     background: url("../img/mgoreev.jpg") center / cover;
 }
@@ -286,6 +297,7 @@ header {
 .dev-block-info .dborovikov {
     background: url("../img/dborovikov.jpg") center / cover;
 }
+/*** about us developers avatars styles end ***/
 
 .dev-block-info-desc {
     display: flex;
@@ -298,15 +310,16 @@ header {
     font-weight: bold;
 }
 
-.dev-block-position {
-    color: #fff; 
-}
-
 .dev-block-link img {
     width: auto;
     height: 40px;
 }
+/** about us developers styles end **/
 /* About us styles end */
+
+
+
+
 
 /* footer styles start */
 footer {
@@ -331,7 +344,7 @@ footer {
 }
 
 /*** footer nav panel logo styles ***/
-.footer-elements nav .footer-logo-link {
+.footer-elements nav .footer-logo {
     display: flex;
 }
 
@@ -377,6 +390,7 @@ footer {
 .footer-links a svg:hover {
     background-color: #5567a0;
 }
+/** footer nav panel styles end **/
 
 .footer-info {
     padding: 10px 0;
@@ -385,9 +399,6 @@ footer {
     color: rgb(128, 128, 128);
     font-size: 14px;
 }
-
-
-/** footer nav panel styles end **/
 /* footer styles end */
 
 
@@ -401,7 +412,7 @@ footer {
         height: auto;
     }
 
-    .header-elements nav .header-logo-link {
+    .header-elements nav .header-logo {
         margin: 20px 0;
     }
 
@@ -409,7 +420,7 @@ footer {
         padding: 0 15px;
     }
 
-    .header-log-in a {
+    .header-login a {
         margin: 20px 0 15px 0;
     }
     /** header nav styles end */
@@ -482,7 +493,7 @@ footer {
         height: auto;
     }
 
-    .footer-elements nav .footer-logo-link {
+    .footer-elements nav .footer-logo {
         margin: 20px 0;
     }
 
