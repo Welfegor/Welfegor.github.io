@@ -308,6 +308,89 @@ header {
 }
 /* About us styles end */
 
+/* footer styles start */
+footer {
+    background-color: #23272a;
+}
+
+.footer-elements {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+}
+
+/** footer nav panel styles start **/
+.footer-elements nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(114, 137, 218);
+}
+
+/*** footer nav panel logo styles ***/
+.footer-elements nav .footer-logo-link {
+    display: flex;
+}
+
+/*** footer nav panel menu styles start ***/
+.footer-elements nav ul {
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.footer-elements nav ul li {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-elements nav ul li a {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.footer-elements nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    background-color: #5567a0;
+}
+/*** footer nav panel menu styles end ***/
+
+.footer-links {
+    height: 100%;
+}
+
+
+.footer-links a svg {
+    height: 100%;
+    padding: 0 15px;
+    transition: all .5s ease-in-out;
+}
+
+.footer-links a svg:hover {
+    background-color: #5567a0;
+}
+
+.footer-info {
+    padding: 10px 0;
+}
+.footer-info-copyright {
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+}
+
+
+/** footer nav panel styles end **/
+/* footer styles end */
+
+
 
 /* For small devices */
 @media (max-width: 1023px) {
@@ -391,8 +474,24 @@ header {
     .about-us-desc p {
         font-size: 20px;
     }
-
-
-
     /* about us styles end */
+
+    /* footer styles start */
+    .footer-elements nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-elements nav .footer-logo-link {
+        margin: 20px 0;
+    }
+
+    .footer-elements nav ul li a {
+        padding: 0 15px;
+    }
+
+    .footer-links {
+        margin: 20px 0 15px 0;
+    }
+    /* footer styles end */
 }
