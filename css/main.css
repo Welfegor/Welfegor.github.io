@@ -378,6 +378,21 @@ header {
         align-items: center;
     }
 
+    .about-us-desc h3 {
+        font: 24px 'Bebas Neue';
+        font-weight: bold;
+    }
+
+    .about-us-desc h2 {
+        font: 50px 'Bebas Neue';
+        font-weight: bold;
+    }
+
+    .about-us-desc p {
+        font-size: 20px;
+    }
+
+
 
     /* about us styles end */
 }
